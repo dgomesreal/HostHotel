@@ -44,7 +44,7 @@ namespace HostHotel.Controllers
         public ActionResult Add(Hotel hotel)
         {
             _dao.Add(hotel);
-            return View("List");
+            return RedirectToAction("List");
         }
 
         [HttpPost]
