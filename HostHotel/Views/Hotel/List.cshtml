@@ -1,6 +1,17 @@
 ﻿@model List<Hotel>
 
 <h1 class="display-4">Hotels list</h1>
+<div class="input-group">
+    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filtrar Por</button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" asp-controller="Hotel" asp-action="FilterPerName" asp-route="">Nome</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" asp-controller="Hotel" asp-action="FilterPerFacilities">Facilities</a>
+        </div>
+    </div>
+</div>
 <div class="album py-5 bg-light">
     <div class="container">
         <div class="row">

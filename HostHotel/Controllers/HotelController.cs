@@ -25,16 +25,13 @@ namespace HostHotel.Controllers
             return View(_list);
         }
 
-        [HttpGet]
-        public ActionResult FilterPerName(string Name)
+        public ActionResult FilterPerName([Bind(Prefix = "id")] string Name)
         {
             _list = _dao.FilterPerName(Name);
             return View("List", _list);
         }
 
-
-        [HttpGet]
-        public ActionResult FilterPerFacilities(string Facilities)
+        public ActionResult FilterPerFacilities([Bind(Prefix = "id")] string Facilities)
         {
             _list = _dao.FilterPerFacilities(Facilities);
             return View("List", _list);
