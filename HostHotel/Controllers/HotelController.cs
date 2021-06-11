@@ -47,7 +47,6 @@ namespace HostHotel.Controllers
             return RedirectToAction("List");
         }
 
-        [HttpPost]
         public ActionResult Update(Hotel hotel)
         {
             if (ModelState.IsValid)
@@ -61,18 +60,16 @@ namespace HostHotel.Controllers
             }
         }
 
-        [HttpPost]
         public ActionResult Edit(int id)
         {
             Hotel hotel = _dao.Find(id);
             return View(hotel);
         }
 
-        [HttpDelete]
         public ActionResult Delete(int id)
         {
             _dao.Delete(id);
-            return View("List");
+            return RedirectToAction("List");
         }
     }
 }

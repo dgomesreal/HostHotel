@@ -145,3 +145,4 @@ D:\Projects\HostHotel\HostHotel\obj\Debug\net5.0\HostHotel.dll
 D:\Projects\HostHotel\HostHotel\obj\Debug\net5.0\ref\HostHotel.dll
 D:\Projects\HostHotel\HostHotel\obj\Debug\net5.0\HostHotel.pdb
 D:\Projects\HostHotel\HostHotel\obj\Debug\net5.0\HostHotel.genruntimeconfig.cache
+D:\Projects\HostHotel\HostHotel\obj\Debug\net5.0\HostHotel.csproj.AssemblyReference.cache
