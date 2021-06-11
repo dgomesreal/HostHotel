@@ -1,0 +1,17 @@
+﻿@model Hotel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Register a new Hotel</p>
+    <form asp-controller="Hotel" asp-action="Add" method="post">
+        <label><input asp-for="Name" type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1" required></label>
+        <label><input asp-for="Summary" type="text" class="form-control" placeholder="Summary" aria-label="Username" aria-describedby="basic-addon1" required></label>
+        <label><input asp-for="Address" type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1" required></label>
+        <label><input asp-for="Facilities" type="text" class="form-control" placeholder="Facilities" aria-label="Username" aria-describedby="basic-addon1" required></label>
+        <button type="submit" class="btn btn-outline-secondary">Register</button>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_Scripts" />
+}
